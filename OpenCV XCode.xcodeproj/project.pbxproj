@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F654A31824C4A46B0036A118 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F654A31724C4A46B0036A118 /* main.cpp */; };
+		F69A401F24CA4776003B5FAB /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69A401D24CA4776003B5FAB /* Utils.cpp */; };
+		F69A402224CA47E0003B5FAB /* Veinprint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69A402124CA47E0003B5FAB /* Veinprint.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,11 +22,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		F686994C24C52DA300F80D5C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F654A31424C4A46B0036A118 /* OpenCV XCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCV XCode"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F654A31724C4A46B0036A118 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F654A31F24C4E4E90036A118 /* libopencv_video.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_video.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_video.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32624C4E5060036A118 /* libopencv_imgcodecs.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_imgcodecs.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32724C4E5060036A118 /* libopencv_stitching.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stitching.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_stitching.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32824C4E5060036A118 /* libopencv_objdetect.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_objdetect.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32924C4E5060036A118 /* libopencv_photo.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_photo.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_photo.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32A24C4E5060036A118 /* libopencv_highgui.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_highgui.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32B24C4E5060036A118 /* libopencv_flann.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_flann.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_flann.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32C24C4E5060036A118 /* libopencv_features2d.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_features2d.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_features2d.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32D24C4E5060036A118 /* libopencv_calib3d.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_calib3d.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_calib3d.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32E24C4E5060036A118 /* libopencv_core.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_core.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A32F24C4E5060036A118 /* libopencv_imgproc.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_imgproc.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A33024C4E5060036A118 /* libopencv_ml.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_ml.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A33124C4E5060036A118 /* libopencv_dnn.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dnn.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_dnn.4.4.0.dylib; sourceTree = "<group>"; };
+		F654A33224C4E5060036A118 /* libopencv_videoio.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_videoio.4.4.0.dylib; path = ../opencv/build/install/lib/libopencv_videoio.4.4.0.dylib; sourceTree = "<group>"; };
+		F686993524C52B6E00F80D5C /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; name = build; path = ../opencv/build; sourceTree = "<group>"; };
+		F69A401324CA2D31003B5FAB /* OpenCV XCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenCV XCode.entitlements"; sourceTree = "<group>"; };
+		F69A401D24CA4776003B5FAB /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
+		F69A401E24CA4776003B5FAB /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		F69A402024CA47E0003B5FAB /* Veinprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veinprint.h; sourceTree = "<group>"; };
+		F69A402124CA47E0003B5FAB /* Veinprint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Veinprint.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +75,7 @@
 			children = (
 				F654A31624C4A46B0036A118 /* OpenCV XCode */,
 				F654A31524C4A46B0036A118 /* Products */,
+				F654A31E24C4E4E90036A118 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +90,36 @@
 		F654A31624C4A46B0036A118 /* OpenCV XCode */ = {
 			isa = PBXGroup;
 			children = (
+				F69A401324CA2D31003B5FAB /* OpenCV XCode.entitlements */,
 				F654A31724C4A46B0036A118 /* main.cpp */,
+				F69A401D24CA4776003B5FAB /* Utils.cpp */,
+				F69A401E24CA4776003B5FAB /* Utils.h */,
+				F69A402124CA47E0003B5FAB /* Veinprint.cpp */,
+				F69A402024CA47E0003B5FAB /* Veinprint.h */,
 			);
 			path = "OpenCV XCode";
+			sourceTree = "<group>";
+		};
+		F654A31E24C4E4E90036A118 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F686993524C52B6E00F80D5C /* build */,
+				F654A32D24C4E5060036A118 /* libopencv_calib3d.4.4.0.dylib */,
+				F654A32E24C4E5060036A118 /* libopencv_core.4.4.0.dylib */,
+				F654A33124C4E5060036A118 /* libopencv_dnn.4.4.0.dylib */,
+				F654A32C24C4E5060036A118 /* libopencv_features2d.4.4.0.dylib */,
+				F654A32B24C4E5060036A118 /* libopencv_flann.4.4.0.dylib */,
+				F654A32A24C4E5060036A118 /* libopencv_highgui.4.4.0.dylib */,
+				F654A32624C4E5060036A118 /* libopencv_imgcodecs.4.4.0.dylib */,
+				F654A32F24C4E5060036A118 /* libopencv_imgproc.4.4.0.dylib */,
+				F654A33024C4E5060036A118 /* libopencv_ml.4.4.0.dylib */,
+				F654A32824C4E5060036A118 /* libopencv_objdetect.4.4.0.dylib */,
+				F654A32924C4E5060036A118 /* libopencv_photo.4.4.0.dylib */,
+				F654A32724C4E5060036A118 /* libopencv_stitching.4.4.0.dylib */,
+				F654A33224C4E5060036A118 /* libopencv_videoio.4.4.0.dylib */,
+				F654A31F24C4E4E90036A118 /* libopencv_video.4.4.0.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +132,7 @@
 				F654A31024C4A46B0036A118 /* Sources */,
 				F654A31124C4A46B0036A118 /* Frameworks */,
 				F654A31224C4A46B0036A118 /* CopyFiles */,
+				F686994C24C52DA300F80D5C /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -119,6 +180,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69A402224CA47E0003B5FAB /* Veinprint.cpp in Sources */,
+				F69A401F24CA4776003B5FAB /* Utils.cpp in Sources */,
 				F654A31824C4A46B0036A118 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,10 +239,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/don/Dev/opencv/install/include/opencv4;
+				LIBRARY_SEARCH_PATHS = "/Users/Don/Dev/opencv/install/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-L/Users/don/Dev/opencv/install/lib",
+					"-lopencv_imgcodecs",
+					"-lopencv_features2d",
+				);
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -228,9 +301,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Users/don/Dev/opencv/install/include/opencv4;
+				LIBRARY_SEARCH_PATHS = "/Users/Don/Dev/opencv/install/lib/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lopencv_core",
+					"-lopencv_highgui",
+					"-lopencv_imgproc",
+					"-L/Users/don/Dev/opencv/install/lib",
+					"-lopencv_imgcodecs",
+					"-lopencv_features2d",
+				);
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -238,20 +322,28 @@
 		F654A31C24C4A46B0036A118 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "OpenCV XCode/OpenCV XCode.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2WJ7VNH7J;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didomenico.opencv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		F654A31D24C4A46B0036A118 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "OpenCV XCode/OpenCV XCode.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V2WJ7VNH7J;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.didomenico.opencv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
