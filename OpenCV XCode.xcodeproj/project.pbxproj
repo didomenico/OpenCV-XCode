@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F654A31824C4A46B0036A118 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F654A31724C4A46B0036A118 /* main.cpp */; };
-		F69A401F24CA4776003B5FAB /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69A401D24CA4776003B5FAB /* Utils.cpp */; };
-		F69A402224CA47E0003B5FAB /* Veinprint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F69A402124CA47E0003B5FAB /* Veinprint.cpp */; };
 		F6AEF5CE24CE83B100710430 /* libopencv_imgproc.4.4.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6AEF57424CE839800710430 /* libopencv_imgproc.4.4.0.dylib */; };
 		F6AEF5CF24CE83B100710430 /* libopencv_objdetect.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6AEF57524CE839800710430 /* libopencv_objdetect.dylib */; };
 		F6AEF5D024CE83B100710430 /* libopencv_dnn_superres.4.4.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = F6AEF57624CE839800710430 /* libopencv_dnn_superres.4.4.dylib */; };
@@ -161,7 +159,7 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 12;
 			dstPath = "";
-			dstSubfolderSpec = 16;
+			dstSubfolderSpec = 6;
 			files = (
 				F6AEF5D424CE83B100710430 /* libopencv_plot.dylib in CopyFiles */,
 				F6AEF62524CE83B300710430 /* libopencv_calib3d.4.4.dylib in CopyFiles */,
@@ -327,10 +325,6 @@
 		F654A31424C4A46B0036A118 /* OpenCV XCode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "OpenCV XCode"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F654A31724C4A46B0036A118 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F69A401324CA2D31003B5FAB /* OpenCV XCode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "OpenCV XCode.entitlements"; sourceTree = "<group>"; };
-		F69A401D24CA4776003B5FAB /* Utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Utils.cpp; sourceTree = "<group>"; };
-		F69A401E24CA4776003B5FAB /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
-		F69A402024CA47E0003B5FAB /* Veinprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Veinprint.h; sourceTree = "<group>"; };
-		F69A402124CA47E0003B5FAB /* Veinprint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Veinprint.cpp; sourceTree = "<group>"; };
 		F6AEF57424CE839800710430 /* libopencv_imgproc.4.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.4.4.0.dylib; path = opencv4/lib/libopencv_imgproc.4.4.0.dylib; sourceTree = "<group>"; };
 		F6AEF57524CE839800710430 /* libopencv_objdetect.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.dylib; path = opencv4/lib/libopencv_objdetect.dylib; sourceTree = "<group>"; };
 		F6AEF57624CE839800710430 /* libopencv_dnn_superres.4.4.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_dnn_superres.4.4.dylib; path = opencv4/lib/libopencv_dnn_superres.4.4.dylib; sourceTree = "<group>"; };
@@ -1123,10 +1117,6 @@
 			children = (
 				F69A401324CA2D31003B5FAB /* OpenCV XCode.entitlements */,
 				F654A31724C4A46B0036A118 /* main.cpp */,
-				F69A401D24CA4776003B5FAB /* Utils.cpp */,
-				F69A401E24CA4776003B5FAB /* Utils.h */,
-				F69A402124CA47E0003B5FAB /* Veinprint.cpp */,
-				F69A402024CA47E0003B5FAB /* Veinprint.h */,
 			);
 			path = "OpenCV XCode";
 			sourceTree = "<group>";
@@ -1196,8 +1186,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F69A402224CA47E0003B5FAB /* Veinprint.cpp in Sources */,
-				F69A401F24CA4776003B5FAB /* Utils.cpp in Sources */,
 				F654A31824C4A46B0036A118 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
